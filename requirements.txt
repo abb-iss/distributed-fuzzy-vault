@@ -1,0 +1,7 @@
+bitstring
+crcmod
+cycler
+mpmath
+pymongo
+six
+sympy
