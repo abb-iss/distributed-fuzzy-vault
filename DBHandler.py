@@ -9,7 +9,8 @@ import Constants
 
 class DBHandler:
     def __init__(self):
-        self.client = MongoClient("mongodb://fuzzy:f0OMRk1z2uwp0Pj2F0Y8MWCx20zmIOxfRyfLsdLNY6qNCYXEn3Vil9fsoJ1ZXMDlZQvksl3tRCIU2zOzRvTpiA==@fuzzy.documents.azure.com:10255/?ssl=true&replicaSet=globaldb")
+        # ToDo: Please add MongoDB API key
+        self.client = MongoClient("mongodb://MONGODB_API_STRING")
         # Select the database
         self.db = self.client['FingerprintDB']
         # Select collection

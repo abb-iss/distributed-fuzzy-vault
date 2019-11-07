@@ -82,7 +82,7 @@ parameters. The application can enroll and verify fingerprints. MINDTCT from NBI
 
 2. Download zip from NBIS open server
 3. unzip `nbis_v5.0.0`
-4. Download `libpng-1.2.23rc01` and copy whole folder to `Rel_5.0.0/png/src/lib`, replacing `png` (rename new folder to `png`). Get `Makefile` from old folder `png` and replace the new one from `libpng-1.2.23rc01`
+4. Download `libpng-1.2.23rc01` and copy whole folder to `Rel_5.0.0/png/src/lib`, replacing existing `png` folder in mentioned path (rename new folder to `png`). Get `Makefile` from old folder `png` and replace the new one from `libpng-1.2.23rc01`
 5. Run:
 
     ```shell
@@ -97,7 +97,7 @@ parameters. The application can enroll and verify fingerprints. MINDTCT from NBI
     make config
     ```
 
-7. Compile `libpng` seperately (described in [INSTALL](INSTALL.md) file) and get `libpng12.a` file from `/usr/local/lib`
+7. Compile `libpng` separately (described in [INSTALL](INSTALL) file from new `png` folder) and get `libpng12.a` file from `/usr/local/lib`
 8. Copy `libpng12.a` file to `Rel_5.0.0/exports/lib` and rename to `libpng.a`
 9. Copy renamed `libpng.a` also to `Rel_5.0.0/png/src/lib/png`
 10. Run:
