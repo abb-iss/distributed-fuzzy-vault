@@ -1,8 +1,8 @@
 # Privacy mechanisms for decentralized fingerprint-based authentication
 
-*MSc thesis project by Swe Geng at ETH Zurich in collaboration with ABB Corporate Research 
+*MSc thesis project by Swe Geng at ETH Zurich in collaboration with ABB Corporate Research* 
 
-Supervisors: Georgia Giannopoulou, Maëlle Kabir-Querrec*
+*Supervisors: Georgia Giannopoulou, Maëlle Kabir-Querrec*
 
 The research results of the project have been published in [WPES 2019](https://dl.acm.org/doi/10.1145/3338498.3358648) and in an extended form, in [arxiv](https://arxiv.org/abs/1911.00248).
 
