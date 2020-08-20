@@ -1,35 +1,12 @@
 # Privacy mechanisms for decentralized fingerprint-based authentication
 
-*MSc thesis project Swe Geng at ETH Zurich in collaboration with ABB Corporate Research*
+*MSc thesis project by Swe Geng at ETH Zurich in collaboration with ABB Corporate Research 
+(supervised by Georgia Giannopoulou, Maëlle Kabir-Querrec)*
+The research results of the project have been published in [WPES 2019](https://dl.acm.org/doi/10.1145/3338498.3358648) and in an extended form, in [arxiv](https://arxiv.org/abs/1911.00248).
 
-## Topic
+## Thesis abstract
 
-Biometric authentication, especially based on fingerprints, is widely used nowadays. Besides authentication
-mechanisms that locally store the biometric data of the users, there are schemes for using biometric
-authentication in a decentralized way (for more flexible authentication mechanisms across multiple
-locations and/or for multiple applications).
-Despite the tendency towards decentralization, regulations on personal data (e.g. GDPR) help protect
-individuals and give them back the control over their data. E.g. vendors and service providers are now
-enjoined to deliver products with "privacy by design and by default."
-In this context, we explore the use of fingerprint scanners, which are the most common biometric authentication
-solution in decentralized applications.
-
-## Research Objectives
-
-* Survey existing mechanisms of fingerprint readers to protect personal information,
-* Investigate the use of fingerprint-based authentication across multiple locations and applications,
-* Devise a use case for decentralized fingerprint-based authentication along with privacy strategies, and
-* Implement a proof of concept.
-
-## Research Questions
-
-* What are the privacy mechanisms of off-the-shelf fingerprint scanners? Do metrics exist to assess
-the privacy level of a device?
-* How can fingerprint-based authentication be used in a decentralized way while complying with
-regulations? What challenges with regard to privacy does this imply? Can existing mechanisms address
-a part of them? Do we need novel privacy schemes?
-* How can we transfer the access control reference from one point to another? How to book-keep
-where it is in order to be able to delete it?
+Biometric authentication is getting increasingly popular due to the convenience of using unique individual traits, such as fingerprints, palm veins, irises. Especially fingerprints are widely used nowadays due to the availability and low cost of fingerprint scanners. To avoid identity theft or impersonation, fingerprint data is typically stored locally, e.g., in a trusted hardware module, in a single device that is used for user enrollment and authentication. Local storage, however, limits the ability to implement distributed applications, in which users can enroll their fingerprint once and use it to access multiple physical locations and mobile applications afterwards. This thesis presents a distributed authentication system that stores fingerprint data in a server or cloud infrastructure in a privacy-preserving way. Multiple devices can be connected and perform user enrollment or verification. To secure the privacy and integrity of sensitive data, we employ a cryptographic construct called fuzzy vault. We highlight challenges in implementing fuzzy vault-based authentication, for which we propose and compare alternative solutions. We conduct a security analysis of our biometric cryptosystem, and as a proof of concept, we build an authentication system for access control using resource-constrained devices (Raspberry Pis) connected to fingerprint scanners and the Microsoft Azure cloud environment. Furthermore, we evaluate the fingerprint matching algorithm against the well-known FVC2006 database and show that it can achieve comparable accuracy to widely-used matching techniques that are not designed for privacy, while remaining efficient with an authentication time of few seconds.
 
 ## Fuzzy Vault Implementation
 
